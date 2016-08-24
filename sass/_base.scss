@@ -1,0 +1,36 @@
+a{
+  color: $white;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+._page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  line-height: 1.2
+}
+
+._row{
+  padding: 50px;
+}
+
+.button{
+  border: 2px solid $white;
+  border-radius: 3px;
+  background: transparent;
+  color: $white;
+  font-size: 14px;
+  font: 14px / 1.2 $medium;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  padding: 10px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

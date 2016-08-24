@@ -1,0 +1,221 @@
+.landing{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  // Invite styles
+  &-invite{
+    background: url('../images/planet_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+
+    &-inner{
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      nav{
+        display: flex;
+        align-items: center;
+        margin: 20px 0 0;
+
+        a,
+        span{
+          display: block;
+          color: white;
+          text-transform: uppercase;
+          font: 18px $book;
+        }
+
+        span{
+          font-size: 15px;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    &-buttons{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30%;
+
+      .button:first-child{
+        min-width: 185px;
+        &:before{
+          content: '';
+          background: url('../images/arrow.png') no-repeat 0 0;
+          width: 13px;
+          height: 15px;
+          margin-right: 10px;
+        }
+      }
+
+      .button:last-child{
+        min-width: 185px;
+        &:after{
+          content: '';
+          background: url('../images/people.png') no-repeat 0 0;
+          width: 20px;
+          height: 16px;
+          margin-left: 10px;
+        }
+      }
+
+    }
+  }
+
+  // Slider styles
+  &-slider{
+    background: url('../images/slider_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    h2{
+      font: 30px / 1.2 $black;
+      color: $blue;
+      max-width: 500px;
+      padding-left: 60px;
+    }
+
+    &-left{
+      width: 70%;
+      float: left;
+    }
+
+    &-right{
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+      float: right;
+
+      .picture{
+        border: 5px solid $white;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 265px;
+        height: 265px;
+        img{
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    &-description{
+      font: 18px / 1.2 $medium;
+      color: $white;
+      padding: 20px 60px;
+      position: relative;
+      margin-top: 50px;
+      &:before,
+      &:after{
+        content: '';
+        background: url('../images/brackets.png') no-repeat 0 0;
+        width: 39px;
+        height: 31px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &:after{
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        transform: scale(-1);
+      }
+    }
+
+    &-user-info{
+      margin-top: 15px;
+      font: 14px / 1.2 $lightOblique;
+    }
+
+    .flex-direction-nav{
+      display: none;
+    }
+
+    .flex-control-paging{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+
+      a{
+        background: url('../images/slider-buttons.png') no-repeat 100% 0;
+        width: 12px;
+        height: 12px;
+        display: block;
+        text-indent: -9999px;
+        margin: 0 5px;
+        &.flex-active{
+          background-position: 0 0;
+        }
+      }
+    }
+
+  }
+
+  // Honors styles
+  &-honors{
+    background: url('../images/honors_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    padding: 60px 20px;
+
+    &-inner{
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item{
+      width: 13%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: $white;
+
+      img{
+        width: 110px;
+        height: 110px;
+        display: block;
+      }
+
+      h2{
+        text-transform: uppercase;
+        margin-top: 15px;
+        font: bold 14px helvetica;
+      }
+
+      p{
+        margin-top: 25px;
+        font: 14px $light;
+      }
+    }
+
+    &-dotted-arrow{
+      background: url('../images/dotted_arrow.png') no-repeat 0 50%;
+      width: 120px;
+      height: 110px;
+      &.-scale{
+        transform: scaleY(-1);
+        background-position: 0 40%;
+      }
+    }
+
+  }
+
+}

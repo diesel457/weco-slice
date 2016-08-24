@@ -1,0 +1,453 @@
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url("../fonts/AvenirLTStd-Medium.otf");
+}
+@font-face {
+  font-family: AvenirBook;
+  src: url("../fonts/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: AvenirBlack;
+  src: url("../fonts/AvenirLTStd-Black.otf");
+}
+@font-face {
+  font-family: AvenirLight;
+  src: url("../fonts/AvenirLTStd-Light.otf");
+}
+@font-face {
+  font-family: AvenirItalic;
+  src: url("../fonts/AvenirLTStd-LightOblique.otf");
+}
+/* line 1, ../sass/_base.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 9, ../sass/_base.scss */
+._page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  line-height: 1.2;
+}
+
+/* line 16, ../sass/_base.scss */
+._row {
+  padding: 50px;
+}
+
+/* line 20, ../sass/_base.scss */
+.button {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font: 14px/1.2 AvenirMedium, Arial, Helvetiva, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 1, ../sass/_header.scss */
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: .2s linear;
+}
+/* line 8, ../sass/_header.scss */
+.header.-scrolled {
+  background: rgba(9, 17, 34, 0.8);
+}
+/* line 13, ../sass/_header.scss */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  width: 100%;
+}
+/* line 20, ../sass/_header.scss */
+.header-nav a {
+  display: block;
+  font: 15px AvenirMedium, Arial, Helvetiva, sans-serif;
+}
+/* line 24, ../sass/_header.scss */
+.header-nav a + a {
+  margin-left: 50px;
+}
+/* line 29, ../sass/_header.scss */
+.header-nav img {
+  width: 85px;
+  height: 20px;
+}
+/* line 35, ../sass/_header.scss */
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* line 1, ../sass/_footer.scss */
+.footer {
+  background-color: #cccdd0;
+  padding: 45px 20px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+/* line 8, ../sass/_footer.scss */
+.footer-inner {
+  display: flex;
+  justify-content: center;
+}
+/* line 13, ../sass/_footer.scss */
+.footer-item {
+  max-width: 250px;
+  margin-left: 135px;
+}
+/* line 16, ../sass/_footer.scss */
+.footer-item:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/_footer.scss */
+.footer-item h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font: 14px AvenirBlack, Arial, Helvetiva, sans-serif;
+}
+/* line 26, ../sass/_footer.scss */
+.footer-item a {
+  display: block;
+  color: #091122;
+  margin-top: 5px;
+}
+/* line 32, ../sass/_footer.scss */
+.footer-item-description {
+  margin-top: 15px;
+  line-height: 1.2;
+  font: 14px/1.2 AvenirBook, Arial, Helvetiva, sans-serif;
+}
+/* line 37, ../sass/_footer.scss */
+.footer-item-description.-italic {
+  font-family: AvenirItalic, Arial, Helvetiva, sans-serif;
+}
+/* line 44, ../sass/_footer.scss */
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+/* line 50, ../sass/_footer.scss */
+.footer-social {
+  width: 29px;
+  height: 29px;
+  display: block;
+  background: url("../images/social_icons.png") no-repeat;
+}
+/* line 56, ../sass/_footer.scss */
+.footer-social.fb {
+  background-position: 0 0;
+  margin-right: 5px;
+}
+/* line 60, ../sass/_footer.scss */
+.footer-social.yt {
+  background-position: 100% 0;
+}
+
+/* line 1, ../sass/_landing.scss */
+.landing {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+/* line 7, ../sass/_landing.scss */
+.landing-invite {
+  background: url("../images/planet_bg.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 85px;
+}
+/* line 16, ../sass/_landing.scss */
+.landing-invite-inner {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 22, ../sass/_landing.scss */
+.landing-invite-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 28, ../sass/_landing.scss */
+.landing-invite-inner nav {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0;
+}
+/* line 33, ../sass/_landing.scss */
+.landing-invite-inner nav a,
+.landing-invite-inner nav span {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font: 18px AvenirBook, Arial, Helvetiva, sans-serif;
+}
+/* line 41, ../sass/_landing.scss */
+.landing-invite-inner nav span {
+  font-size: 15px;
+  margin: 0 10px;
+}
+/* line 48, ../sass/_landing.scss */
+.landing-invite-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30%;
+}
+/* line 54, ../sass/_landing.scss */
+.landing-invite-buttons .button:first-child {
+  min-width: 185px;
+}
+/* line 56, ../sass/_landing.scss */
+.landing-invite-buttons .button:first-child:before {
+  content: '';
+  background: url("../images/arrow.png") no-repeat 0 0;
+  width: 13px;
+  height: 15px;
+  margin-right: 10px;
+}
+/* line 65, ../sass/_landing.scss */
+.landing-invite-buttons .button:last-child {
+  min-width: 185px;
+}
+/* line 67, ../sass/_landing.scss */
+.landing-invite-buttons .button:last-child:after {
+  content: '';
+  background: url("../images/people.png") no-repeat 0 0;
+  width: 20px;
+  height: 16px;
+  margin-left: 10px;
+}
+/* line 80, ../sass/_landing.scss */
+.landing-slider {
+  background: url("../images/slider_bg.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+/* line 86, ../sass/_landing.scss */
+.landing-slider h2 {
+  font: 30px/1.2 AvenirBlack, Arial, Helvetiva, sans-serif;
+  color: #afbfc6;
+  max-width: 500px;
+  padding-left: 60px;
+}
+/* line 93, ../sass/_landing.scss */
+.landing-slider-left {
+  width: 70%;
+  float: left;
+}
+/* line 98, ../sass/_landing.scss */
+.landing-slider-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+}
+/* line 104, ../sass/_landing.scss */
+.landing-slider-right .picture {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 265px;
+  height: 265px;
+}
+/* line 110, ../sass/_landing.scss */
+.landing-slider-right .picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 118, ../sass/_landing.scss */
+.landing-slider-description {
+  font: 18px/1.2 AvenirMedium, Arial, Helvetiva, sans-serif;
+  color: #fff;
+  padding: 20px 60px;
+  position: relative;
+  margin-top: 50px;
+}
+/* line 124, ../sass/_landing.scss */
+.landing-slider-description:before, .landing-slider-description:after {
+  content: '';
+  background: url("../images/brackets.png") no-repeat 0 0;
+  width: 39px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 134, ../sass/_landing.scss */
+.landing-slider-description:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  transform: scale(-1);
+}
+/* line 143, ../sass/_landing.scss */
+.landing-slider-user-info {
+  margin-top: 15px;
+  font: 14px/1.2 AvenirItalic, Arial, Helvetiva, sans-serif;
+}
+/* line 148, ../sass/_landing.scss */
+.landing-slider .flex-direction-nav {
+  display: none;
+}
+/* line 152, ../sass/_landing.scss */
+.landing-slider .flex-control-paging {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 157, ../sass/_landing.scss */
+.landing-slider .flex-control-paging a {
+  background: url("../images/slider-buttons.png") no-repeat 100% 0;
+  width: 12px;
+  height: 12px;
+  display: block;
+  text-indent: -9999px;
+  margin: 0 5px;
+}
+/* line 164, ../sass/_landing.scss */
+.landing-slider .flex-control-paging a.flex-active {
+  background-position: 0 0;
+}
+/* line 173, ../sass/_landing.scss */
+.landing-honors {
+  background: url("../images/honors_bg.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  padding: 60px 20px;
+}
+/* line 178, ../sass/_landing.scss */
+.landing-honors-inner {
+  display: flex;
+  justify-content: center;
+}
+/* line 183, ../sass/_landing.scss */
+.landing-honors-item {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+/* line 191, ../sass/_landing.scss */
+.landing-honors-item img {
+  width: 110px;
+  height: 110px;
+  display: block;
+}
+/* line 197, ../sass/_landing.scss */
+.landing-honors-item h2 {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font: bold 14px helvetica;
+}
+/* line 203, ../sass/_landing.scss */
+.landing-honors-item p {
+  margin-top: 25px;
+  font: 14px AvenirLight, Arial, Helvetiva, sans-serif;
+}
+/* line 209, ../sass/_landing.scss */
+.landing-honors-dotted-arrow {
+  background: url("../images/dotted_arrow.png") no-repeat 0 50%;
+  width: 120px;
+  height: 110px;
+}
+/* line 213, ../sass/_landing.scss */
+.landing-honors-dotted-arrow.-scale {
+  transform: scaleY(-1);
+  background-position: 0 40%;
+}

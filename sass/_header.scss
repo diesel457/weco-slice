@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: .2s linear;
+
+  &.-scrolled{
+    background: rgba($black-first, 0.8);
+
+  }
+
+  &-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    width: 100%;
+
+    a{
+      display: block;
+      font: 15px $medium;
+
+      & + a{
+        margin-left: 50px;
+      }
+    }
+
+    img{
+      width: 85px;
+      height: 20px;
+    }
+  }
+
+  &-left,
+  &-right{
+    display: flex;
+    align-items: center;
+  }
+
+}
