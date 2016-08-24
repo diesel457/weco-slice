@@ -123,6 +123,7 @@
       <?php include "../base/footer.php"  ?>
 
     </div>
+    <?php include "../blocks/login.php"  ?>
   </body>
 
 </html>

@@ -155,14 +155,21 @@
       margin-top: 50px;
 
       a{
-        background: url('../images/slider-buttons.png') no-repeat 100% 0;
-        width: 12px;
-        height: 12px;
+        background-color: $white;
+        width: 10px;
+        height: 10px;
         display: block;
         text-indent: -9999px;
         margin: 0 5px;
+        border-radius: 100%;
+        opacity: 0.3;
         &.flex-active{
-          background-position: 0 0;
+          opacity: 1;
+          width: 11px;
+          height: 11px;
+        }
+        &:hover{
+          opacity: 1;
         }
       }
     }

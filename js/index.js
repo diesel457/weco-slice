@@ -15,5 +15,4 @@ window.onscroll = function() {
   }else{
     el.classList.remove('-scrolled');
   }
-
 };

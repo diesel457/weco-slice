@@ -7,7 +7,7 @@
       <a href="#">FAQ</a>
       <a href="#">Sign up</a>
     </div>
-    <div class="header-right"><a href="#">Log in</a></div>
+    <div class="header-right"><a data-popup-id='login-popup-cover' class="popup-init">Log in</a></div>
   </nav>
 
 </header>
