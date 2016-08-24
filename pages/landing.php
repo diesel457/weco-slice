@@ -21,7 +21,7 @@
             </nav>
             <div class="landing-invite-buttons">
               <button class="button">watch video</button>
-              <button class="button">create profile</button>
+              <button data-popup-id='login-popup-cover' class="button popup-init">create profile</button>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
               </div>
               <div class="landing-slider-right">
                 <div class="picture">
-                  <img src="../other/girl.jpeg" alt="" />
+                  <img src="../other/ava.png" alt="" />
                 </div>
               </div>
             </li>
@@ -72,7 +72,7 @@
               </div>
               <div class="landing-slider-right">
                 <div class="picture">
-                  <img src="../other/girl.jpeg" alt="" />
+                  <img src="../other/ava.png" alt="" />
                 </div>
               </div>
             </li>
